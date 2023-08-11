@@ -1,0 +1,39 @@
+/* Nova Tool CSS */
+/*@tailwind base;*/
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .scoped-changelog h1 {
+        @apply mt-5 font-bold text-xl;
+    }
+
+    .scoped-changelog h2 {
+        @apply mt-5 font-semibold text-lg;
+    }
+
+    .scoped-changelog h3 {
+        @apply mt-1 font-semibold text-base;
+    }
+
+    .scoped-changelog ul {
+        @apply list-disc;
+    }
+
+    .scoped-changelog ul li {
+        @apply ml-5;
+    }
+
+    .scoped-changelog hr {
+        @apply text-gray-100 mx-[20%] mt-3;
+    }
+
+    .scoped-changelog p {
+        @apply text-center text-xl;
+    }
+
+    .scoped-changelog a {
+        @apply font-medium text-sky-500;
+    }
+}

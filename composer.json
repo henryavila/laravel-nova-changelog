@@ -1,0 +1,30 @@
+{
+    "name": "henryavila/laravel-nova-changelog",
+    "description": "A Laravel Nova tool that display the content of the changelog file",
+    "keywords": [
+        "laravel",
+        "nova",
+        "changelog"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HenryAvila\\Changelog\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HenryAvila\\Changelog\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
