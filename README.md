@@ -20,7 +20,7 @@ public function tools(): array
 }
 ```
 
-if you use Laravel Nova 4 [Custom Menu](https://nova.laravel.com/docs/customization/menus.html), use use the following code too
+if you use Laravel Nova 4 [Custom Menu](https://nova.laravel.com/docs/customization/menus.html), you can use the following code when building your menu
 ```php
 \HenryAvila\Changelog\Changelog::make()->menu($request),
 ```
