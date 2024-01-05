@@ -20,6 +20,10 @@ class ToolServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $vendorPath = 'nova-changelog';
+        
+        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', $vendorPath);
+        
         $this->app->booted(function () {
             $this->routes();
         });
@@ -27,6 +31,10 @@ class ToolServiceProvider extends ServiceProvider
         Nova::serving(function (ServingNova $event) {
             //
         });
+        
+        $this->publishes([
+            __DIR__.'/../resources/lang' => resource_path('lang/vendor/'.$vendorPath),
+        ], 'lang');
     }
 
     /**
