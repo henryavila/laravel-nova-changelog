@@ -17,6 +17,6 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 */
 
 Route::get('/', fn (NovaRequest $request) => inertia('Changelog', [
-	'title' => __('Histórico de Alterações'),
-	'error_msg' => __('Não foi possível recuperar as informações. Favor tentar novamente mais tarde')
+	'title' => trans('nova-changelog::navigation.menu-name'),
+	'error_msg' => trans('nova-changelog::messages.not-found')
 ]));
