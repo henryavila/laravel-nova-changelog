@@ -29,7 +29,7 @@ class Changelog extends Tool
      */
     public function menu(Request $request)
     {
-        return MenuSection::make(__('Histórico de alterações'))
+        return MenuSection::make(trans('nova-changelog::navigation.menu-name'))
             ->path('/changelog')
             ->icon('view-grid-add');
     }
